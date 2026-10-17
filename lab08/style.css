@@ -1,0 +1,96 @@
+body {font-family: Arial, Helvetica, sans-serif;}
+.evenrow {background-color: lightgray;}
+h1 {font-size: 2em;}
+h2 {font-size: 1.5em;}
+table, th, td {border: 1px solid black;}
+
+body {background-color: #F4F7FB; color: #222222;}
+h1, h2 {color: #24466B;}
+a {color: #175CD3;}
+
+nav {background-color: #24466B;}
+nav a {color: #FFFFFF;}
+nav a:visited {color: #FFFFFF;}
+nav a:hover {background-color: #386FA4;}
+
+nav {
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+.copyright {float: left;}
+
+.motto {float: right;}
+
+footer {display: flow-root;}
+
+.bioimage {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 15px;
+}
+
+main::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.contact-row {
+    display: flex;
+    gap: 20px;
+    margin: 20px;
+}
+
+.contact-box {
+    flex: 1;
+    min-width: 0;
+    background-color: #e1eaf5;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.contact-box h2 {
+    color: #29466b;
+}
+
+.contact-box form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-box input,
+.contact-box select,
+.contact-box textarea {
+    padding: 10px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    box-sizing: border-box;
+    width: 100%;
+    font: inherit;
+}
+
+.contact-box input[type="submit"] {
+    background-color: #29466b;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.contact-box input[type="submit"]:hover {
+    background-color: #416b9c;
+}
+
+.contact-box iframe {
+    width: 100%;
+    max-width: 100%;
+    border: 0;
+    border-radius: 10px;
+}
+
+@media (max-width: 700px) {
+    .contact-row {
+        flex-direction: column;
+    }
+}
