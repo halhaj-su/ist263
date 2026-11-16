@@ -1,0 +1,169 @@
+/* IST 263 Project 6 - Car Care Made Simple */
+/* CSS colors, fonts, box model, flexbox, hover, and media queries */
+
+body {
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #f1f5f9;
+    color: #000e54;
+}
+
+header {
+    background-color: #000e54;
+    color: white;
+    padding: 20px;
+}
+
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.site-name {
+    font-size: 20px;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav a:hover {
+    background-color: #f76900;
+    color: #000e54;
+}
+
+main {
+    width: 90%;
+    margin: auto;
+}
+
+h1, h2, h3 {
+    color: #000e54;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: #dbe8f3;
+    border: 2px solid #000e54;
+}
+
+.hero-text {
+    width: 50%;
+}
+
+.hero img {
+    width: 45%;
+    height: auto;
+}
+
+.button-link {
+    display: inline-block;
+    background-color: #000e54;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.button-link:hover {
+    background-color: #f76900;
+    color: #000e54;
+}
+
+.topics {
+    margin-top: 30px;
+}
+
+.topic-cards {
+    display: flex;
+    gap: 20px;
+}
+
+.topic-card {
+    width: 33%;
+    background-color: white;
+    padding: 15px;
+    border: 1px solid #000e54;
+}
+
+.topic-card img {
+    width: 100%;
+    height: auto;
+}
+
+.topic-card a {
+    color: #000e54;
+}
+
+.topic-card a:hover {
+    color: #f76900;
+}
+
+.info-section {
+    background-color: white;
+    padding: 20px;
+    margin-top: 25px;
+    border: 1px solid #000e54;
+}
+
+footer {
+    background-color: #000e54;
+    color: white;
+    padding: 20px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+/* Responsive layout for tablets and phones */
+@media (max-width: 800px) {
+    .header-inner {
+        flex-direction: column;
+    }
+
+    .hero {
+        flex-direction: column;
+    }
+
+    .hero-text, .hero img {
+        width: 100%;
+    }
+
+    .topic-cards {
+        flex-direction: column;
+    }
+
+    .topic-card {
+        width: auto;
+    }
+
+    nav {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 500px) {
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    main {
+        width: 95%;
+    }
+
+    .hero {
+        padding: 10px;
+    }
+}
