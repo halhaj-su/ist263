@@ -8,10 +8,20 @@ body {background-color: #F4F7FB; color: #222222;}
 h1, h2 {color: #24466B;}
 a {color: #175CD3;}
 
-nav {background-color: #24466B;}
-nav a {color: #FFFFFF;}
-nav a:visited {color: #FFFFFF;}
-nav a:hover {background-color: #386FA4;}
+nav {
+    background-color: #24466B;
+}
+
+nav a,
+nav a:visited {
+    color: #FFFFFF;
+}
+
+nav a:hover,
+nav a:focus {
+    background-color: #386FA4;
+    color: #FFFFFF;
+}
 
 nav {
     padding: 10px;
